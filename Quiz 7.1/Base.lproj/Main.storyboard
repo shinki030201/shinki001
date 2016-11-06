@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz_7_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83z-WL-f7y">
+                                <rect key="frame" x="84" y="517" width="206" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="GyC-GD-r7C"/>
+                                    <constraint firstAttribute="width" secondItem="83z-WL-f7y" secondAttribute="height" multiplier="103:36" id="K06-CT-l8R"/>
+                                    <constraint firstAttribute="width" secondItem="83z-WL-f7y" secondAttribute="height" multiplier="103:36" id="N0Q-5L-SxA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="RNr-N1-nko"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="aJd-1S-0vR"/>
+                                    <constraint firstAttribute="height" constant="72" id="x0U-yr-uKR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Take off">
+                                    <color key="titleColor" red="0.001186844832922751" green="0.43151058761103878" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0sU-kV-e40" kind="modal" id="XgW-uO-UVP"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="のと里山空港や飛行機に関するクイズです" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="brj-CI-HBY">
+                                <rect key="frame" x="84" y="403" width="206" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="3mN-9d-Xu7"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="206" id="K5F-sg-wXN"/>
+                                    <constraint firstAttribute="width" secondItem="brj-CI-HBY" secondAttribute="height" multiplier="206:69" id="KUV-H4-4Py"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="69" id="LTA-kX-gzC"/>
+                                    <constraint firstAttribute="width" secondItem="brj-CI-HBY" secondAttribute="height" multiplier="206:69" id="T8d-0C-5ts"/>
+                                    <constraint firstAttribute="width" constant="206" id="lbm-eC-4Do"/>
+                                    <constraint firstAttribute="height" constant="69" id="nuA-8f-qeA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="oC6-yo-gSt"/>
+                                    <constraint firstAttribute="width" secondItem="brj-CI-HBY" secondAttribute="height" multiplier="206:69" id="qsz-3E-ZZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="のと里山空港クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N69-zz-hE0">
+                                <rect key="frame" x="84" y="310" width="206" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.99809353450000005" blue="0.7300581907" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.2485960130116176" green="0.12151777113341944" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.97084309558763959" blue="0.7992283829844955" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10.NTQ(横2→ Take Off).png" translatesAutoresizingMaskIntoConstraints="NO" id="NTK-Sx-fqM">
+                                <rect key="frame" x="120" y="83" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="cpH-O8-Tgl"/>
+                                    <constraint firstAttribute="width" constant="135" id="x0h-Eb-DI7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88175523052613847" green="1" blue="0.83216964312896946" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="brj-CI-HBY" secondAttribute="bottom" constant="195" id="3hF-Tq-T8E"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="trailing" secondItem="N69-zz-hE0" secondAttribute="trailing" id="EiM-iy-iUx"/>
+                            <constraint firstItem="NTK-Sx-fqM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="FFH-Pg-g4P"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="centerX" secondItem="NTK-Sx-fqM" secondAttribute="centerX" id="GSP-E1-aLZ"/>
+                            <constraint firstItem="N69-zz-hE0" firstAttribute="top" secondItem="NTK-Sx-fqM" secondAttribute="bottom" constant="92" id="UJO-NX-NHa"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="top" secondItem="N69-zz-hE0" secondAttribute="bottom" constant="45" id="lWk-O7-Cda"/>
+                            <constraint firstItem="83z-WL-f7y" firstAttribute="top" secondItem="brj-CI-HBY" secondAttribute="bottom" constant="45" id="sYx-Ic-BLE"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIS-pH-jep"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="leading" secondItem="N69-zz-hE0" secondAttribute="leading" id="w26-N4-qg3"/>
+                            <constraint firstItem="brj-CI-HBY" firstAttribute="leading" secondItem="83z-WL-f7y" secondAttribute="leading" id="ymH-yE-g16"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166.5" y="151.5"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="lTW-mu-Hki">
+            <objects>
+                <viewController id="0sU-kV-e40" customClass="QuizViewController" customModule="Quiz_7_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fMW-wd-5MD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ub6-I8-oik"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22l-5P-GMw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-wd-uXP">
+                                <rect key="frame" x="125" y="312" width="124" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.99809353450030558" blue="0.73005819068450428" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="0sU-kV-e40" eventType="touchUpInside" id="dDf-w8-K0H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL2-By-dXZ">
+                                <rect key="frame" x="125" y="414" width="124" height="54"/>
+                                <color key="backgroundColor" red="0.87294174836840421" green="1" blue="0.8022830461653615" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="0sU-kV-e40" eventType="touchUpInside" id="iNg-up-zax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cA-SX-sKa">
+                                <rect key="frame" x="125" y="216" width="124" height="54"/>
+                                <color key="backgroundColor" red="0.85709829173376018" green="0.89706292915165309" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="0sU-kV-e40" eventType="touchUpInside" id="8x1-rt-1ya"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="17.NTQ(正面）里山.png" translatesAutoresizingMaskIntoConstraints="NO" id="S6D-fJ-AaD">
+                                <rect key="frame" x="94" y="473" width="186" height="186"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UVq-dZ-bfB">
+                                <rect key="frame" x="50" y="37" width="274" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.88821465114294629" blue="0.77493069383743141" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="choiceButton1" destination="8cA-SX-sKa" id="r2w-bv-j3m"/>
+                        <outlet property="choiceButton2" destination="5Xd-wd-uXP" id="u1S-CJ-egf"/>
+                        <outlet property="choiceButton3" destination="rL2-By-dXZ" id="BRZ-bB-2r3"/>
+                        <outlet property="quizTextView" destination="UVq-dZ-bfB" id="QLl-Sg-iBW"/>
+                        <segue destination="IQh-7m-m22" kind="modal" identifier="toResultView" id="3MR-nP-Tb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJL-un-RNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271.5" y="151.5"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="LDS-lk-x5k">
+            <objects>
+                <viewController id="IQh-7m-m22" customClass="ResultViewController" customModule="Quiz_7_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Md-C2-Qde"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZY-Uu-AwI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MaX-aP-GpX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-tm-nja">
+                                <rect key="frame" x="112" y="151" width="151" height="103"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwz-bd-8Bk">
+                                <rect key="frame" x="112" y="475" width="151" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <state key="normal" title="ATB"/>
+                                <connections>
+                                    <action selector="back" destination="IQh-7m-m22" eventType="touchUpInside" id="hO0-fe-pFI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87776295963740558" green="0.80788301154828512" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="HZf-tm-nja" id="Pq6-s0-UZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ict-Q5-sp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.5" y="151.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10.NTQ(横2→ Take Off).png" width="3700" height="3200"/>
+        <image name="17.NTQ(正面）里山.png" width="3700" height="3200"/>
+    </resources>
+</document>
